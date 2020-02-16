@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+// V A R S
+
+@primary: #2979ff;
+@primary-light: #9cc0ff;
+@dark: #212121;
+@light: #EEEEEE;
+//----
+@body-font: 1.15rem;
+@body-color: #424242;
+@bg-color: white;
+@nav-bg: #212121;
+@nav-color: white;
+@brand-float: left;
+@burger-float: right;
+//----
+@link-color: @primary;
+@link-decoration-color: @primary-light;
+//----
+@title-color: #212121;
+@title-color-inverted: white;
+@subtitle-color: #bdbdbd;
+@supersubtitle-color: @title-color;
+//----
+@img-max-height: 200px;
+
+
+// B A S I C S
+
+body.nd {
+  font-size: @body-font;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  color: @body-color;
+  background-color: @bg-color;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nd.main {
+  padding: 5px;
+}
+
+header.nd,
+.nd.nav {
+  background-color: @nav-bg;
+  color: @nav-color;
+  position: fixed;
+  margin: 0;
+  padding-left: 3.5px;
+  padding-right: 3.5px;
+  width: 100%;
+}
+
+.nd.nav .nd.brand {}
+
+.nd.burger {}
+
+// L I N K S
+
+a.nd.link {
+  outline: none;
+  color: @link-color;
+  text-decoration-color: @link-decoration-color;
+}
+
+
+// T Y P O 
+
+.nd.title {
+  color: @title-color;
+}
+
+.nd.subtitle {
+  color: @subtitle-color;
+}
+
+.nd.supersubtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  font-weight: bold;
+  color: @supersubtitle-color;
+  font-size: 0.7rem; //Note: Super subtitle is advised to be small
+}
+
+.nd.inverted {
+  color: @title-color-inverted;
+}
+
+
+// I M A G E S 
+
+.nd.img {
+  width: 100%;
+  max-height: @img-max-height;
+  object-fit: cover;
+}
+
+
+// --------------------------
+
+
+// BY SIMPLEGRID.IO //
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {
+
+  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+
+  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
