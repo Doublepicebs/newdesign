@@ -7,7 +7,7 @@
 @dark: #212121;
 @light: #EEEEEE;
 //----
-@body-font: 1.15rem;
+@body-font: 1rem;
 @body-color: #424242;
 @bg-color: white;
 @nav-bg: #212121;
@@ -22,8 +22,9 @@
 @title-color-inverted: white;
 @subtitle-color: #bdbdbd;
 @supersubtitle-color: @title-color;
+@p-color: #424242;
 //----
-@img-max-height: 200px;
+@img-max-height: 350px;
 
 
 // B A S I C S
@@ -84,9 +85,18 @@ a.nd.link {
 .nd.supersubtitle {
   text-transform: uppercase;
   letter-spacing: 0.06rem;
-  font-weight: bold;
+  font-weight: lighter;
   color: @supersubtitle-color;
   font-size: 0.7rem; //Note: Super subtitle is advised to be small
+}
+
+.nd.article .nd.p::first-letter {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nd.p {
+  color: @p-color;
 }
 
 .nd.inverted {
